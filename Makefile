@@ -6,3 +6,6 @@ help:
 build-contracts: ## Build contracts
 	git submodule update --init --recursive
 	cd contracts && forge build
+
+deploy-contracts: ## Deploy contracts on Holesky
+	./utils/deploy-contracts-on-holesky.sh

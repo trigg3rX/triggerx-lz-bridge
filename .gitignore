@@ -20,3 +20,5 @@ oldUtils
 
 target/
 debug/
+
+utils/holeskyDeployments.json
