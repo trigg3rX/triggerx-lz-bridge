@@ -19,3 +19,6 @@ deploy-sender-on-shasta: ## Deploy Sender Contract on Shasta
 
 send-message: ## Send message
 	node utils/sendMessage.js
+
+deploy-contracts-on-holesky: ## Deploy TM and SM on Holesky
+	./utils/deploy-contracts-on-holesky.sh

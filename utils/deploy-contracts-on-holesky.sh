@@ -3,7 +3,6 @@
 HOLESKY_RPC_URL=$(grep HOLESKY_RPC_URL .env | cut -d '=' -f2)
 HOLESKY_PRIVATE_KEY=$(grep HOLESKY_PRIVATE_KEY .env | cut -d '=' -f2)
 
-
 # get registry coordinator address from utils/deployments.json
 REGISTRY_COORDINATOR=$(jq .registryCoordinator utils/eigenDeployments.json | cut -d '"' -f2 | cut -d '"' -f2)
 AVS_DIRECTORY=$(jq .avsDirectory utils/eigenDeployments.json | cut -d '"' -f2 | cut -d '"' -f2)
