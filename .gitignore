@@ -1,24 +1,8 @@
-# Ignore built output
-dist/
-
-# Ignore environment-specific files
+node_modules
+broadcast
+build
+cache
+lib
+out
 .env
-
-# Ignore editor-specific files
-.vscode/
-.idea/
-
-# Ignore TypeScript build artifacts
-dist/**/*.js
-dist/*.js.map
-dist/*.d.ts
-
-# Ignore local anvil state
-# utils/anvil/*.json
-
-oldUtils
-
-target/
-debug/
-
-utils/holeskyDeployments.json
+yarn.lock

@@ -1,13 +1,10 @@
 #!/bin/bash
 
-# get rpc url and private key from .env file
 HOLESKY_RPC_URL=$(grep HOLESKY_RPC_URL .env | cut -d '=' -f2)
 HOLESKY_PRIVATE_KEY=$(grep HOLESKY_PRIVATE_KEY .env | cut -d '=' -f2)
 
 
-# forge create EthereumLayerZeroReceiver --rpc-url $HOLESKY_RPC_URL --private-key $HOLESKY_PRIVATE_KEY --constructor-args 0x1b356f3030CE0c1eF9D3e1E250Bf0BB11D81b2d1 1000 0xc72F42f429212D07f59aefDb8d4fE975713320a8
-
-get registry coordinator address from utils/deployments.json
+# get registry coordinator address from utils/deployments.json
 REGISTRY_COORDINATOR=$(jq .registryCoordinator utils/eigenDeployments.json | cut -d '"' -f2 | cut -d '"' -f2)
 AVS_DIRECTORY=$(jq .avsDirectory utils/eigenDeployments.json | cut -d '"' -f2 | cut -d '"' -f2)
 STAKE_REGISTRY=$(jq .stakeRegistry utils/eigenDeployments.json | cut -d '"' -f2 | cut -d '"' -f2)
