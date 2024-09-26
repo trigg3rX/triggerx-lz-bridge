@@ -2,6 +2,7 @@ node_modules
 broadcast
 build
 cache
+lib
 out
 .env
 yarn.lock
